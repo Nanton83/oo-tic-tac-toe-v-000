@@ -88,21 +88,21 @@ end
 true
 end
 
-def draw?(board)
-  if won?(board) == false && full?(board) == true
+def draw?
+  if won? == false && full? == true
     return true
 end
 end
 
-def over?(board)
-  if won?(board) || draw?(board) || full?(board) == true
+def over?
+  if won? || draw? || full? == true
     return true
   end
 end
 
-def winner(board)
-  if won?(board)
-    return board[won?(board)[0]]
+def winner
+  if won?
+    return @board[won?[0]]
 end
 end
 
